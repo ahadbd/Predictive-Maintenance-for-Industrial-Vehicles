@@ -19,6 +19,14 @@ Simulates industrial vehicle telematics and predicts when maintenance is require
 | temperature                  | °C engine temp |
 | hours_since_last_maintenance | hours          |
 
+Target: maintenance_required → 0 = no, 1 = yes (binary classification)
+
+Inject patterns such as:
+
+1.High idle time + high engine temp → maintenance_required = 1
+
+2.High load_weight + frequent acceleration spikes → maintenance_required = 1
+
 
 ## Methodology
 1. Data generation & preprocessing
