@@ -8,6 +8,18 @@ Simulates industrial vehicle telematics and predicts when maintenance is require
 - 1500 rows, 8 features + target `maintenance_required`
 - Patterns injected to reflect real-world maintenance triggers
 
+| Feature                      | Description    |
+| ---------------------------- | -------------- |
+| speed                        | km/h           |
+| engine_rpm                   | RPM            |
+| fuel_rate                    | L/h            |
+| idle_time                    | s              |
+| load_weight                  | tons           |
+| acceleration                 | m/s²           |
+| temperature                  | °C engine temp |
+| hours_since_last_maintenance | hours          |
+
+
 ## Methodology
 1. Data generation & preprocessing
 2. Feature scaling (StandardScaler)
